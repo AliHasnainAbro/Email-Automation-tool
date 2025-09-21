@@ -11,7 +11,7 @@
                 "limit": 10,
                 "sheetId": "Sheet1",
                 "__IMTCONN__": 5546416,
-                "spreadsheetId": "/1e90quE0Sz9nPv9A2oj3q3lTBTZEt9Kb1LFUPdJ_YD90",
+                "spreadsheetId": "/test_spreadsheet_id",
                 "tableFirstRow": "A1:Z1",
                 "includesHeaders": true,
                 "valueRenderOption": "FORMATTED_VALUE",
@@ -39,11 +39,11 @@
                                 "scoped": "true",
                                 "connection": "google"
                             },
-                            "label": "My Google connection (email)"
+                            "label": "My Google connection (test@example.com)"
                         },
                         "spreadsheetId": {
                             "path": [
-                                "New Prospects 17 july 2025"
+                                "Test Prospects Sheet"
                             ]
                         },
                         "includesHeaders": {
@@ -320,7 +320,7 @@
                             "module": "google-email:ActionSendEmail",
                             "version": 2,
                             "parameters": {
-                                "account": 5558585
+                                "account": 0000000
                             },
                             "filter": {
                                 "name": "follow up",
@@ -374,7 +374,7 @@
                                                 "scoped": "true",
                                                 "connection": "google-restricted"
                                             },
-                                            "label": "My Google Restricted connection (book.beats01@gmail.com)"
+                                            "label": "My Google Restricted connection (test@example.com)"
                                         }
                                     }
                                 },
@@ -485,7 +485,7 @@
                             "module": "open-router:createAChatCompletion",
                             "version": 1,
                             "parameters": {
-                                "__IMTCONN__": 9361876
+                                "__IMTCONN__": 0000000
                             },
                             "filter": {
                                 "name": "1st email",
@@ -507,7 +507,7 @@
                                 "messages": [
                                     {
                                         "role": "system",
-                                        "content": "You are an expert cold email copywriter.\r\n\r\nYou receive limited structured info to write persuasive, role-aware emails. Info may be missing. Always write as if you're writing to a real human with a pain point in their job. Use smart assumptions.\r\n\r\nIf `About`{{31.`2`}}is missing, infer based on job role or company, i.e\n“Helps drive growth and efficiency at {{31.`4`}}as a {{31.`3`}}” – if actual About is missing.\r\n\r\nWrite a short email (≤ 80 words) that:\r\n- Starts with a challenge question related to their job or industry.\r\n- Gives 1–2 benefits of how AI automation solves it.\r\n- Ends with a clear CTA to book a call (without saying “quick call”)without indicading any calendly or scheduling link just ask for their closest availability as soon as possible with a polite tone.\r\n\r\nUse proper html tags for every line spacing <br><br> for spacing. Never use common sales cliches.\r\nOnly return the final email in HTML. No headers or explanations.\r\n"
+                                        "content": "You are an expert cold email copywriter.\r\n\r\nYou receive limited structured info to write persuasive, role-aware emails. Info may be missing. Always write as if you're writing to a real human with a pain point in their job. Use smart assumptions.\r\n\r\nIf `About`{{31.`2`}}is missing, infer based on job role or company, i.e\n"Helps drive growth and efficiency at {{31.`4`}}as a {{31.`3`}}" – if actual About is missing.\r\n\r\nWrite a short email (≤ 80 words) that:\r\n- Starts with a challenge question related to their job or industry.\r\n- Gives 1–2 benefits of how AI automation solves it.\r\n- Ends with a clear CTA to book a call (without saying "quick call")without indicading any calendly or scheduling link just ask for their closest availability as soon as possible with a polite tone.\r\n\r\nUse proper html tags for every line spacing <br><br> for spacing. Never use common sales cliches.\r\nOnly return the final email in HTML. No headers or explanations.\r\n"
                                     },
                                     {
                                         "role": "user",
@@ -559,7 +559,7 @@
                                         "__IMTCONN__": {
                                             "data": {
                                                 "scoped": "true",
-                                                "connection": "open-router-4ur2vj"
+                                                "connection": "open-router-test"
                                             },
                                             "label": "My OpenRouter connection"
                                         }
@@ -568,7 +568,7 @@
                                 "parameters": [
                                     {
                                         "name": "__IMTCONN__",
-                                        "type": "account:open-router3,open-router-4ur2vj",
+                                        "type": "account:open-router3,open-router-test",
                                         "label": "Connection",
                                         "required": true
                                     }
@@ -699,7 +699,7 @@
                             "module": "google-email:ActionSendEmail",
                             "version": 2,
                             "parameters": {
-                                "account": 5558585
+                                "account": 0000000
                             },
                             "mapper": {
                                 "cc": [],
@@ -708,7 +708,7 @@
                                 ],
                                 "bcc": [],
                                 "from": "",
-                                "html": "{{5.choices[].message.content}}<br>\n<p>Regards,<p>\nAli Abro<br>\nAI Automation Engineer",
+                                "html": "{{5.choices[].message.content}}<br>\n<p>Regards,<p>\nTest User<br>\nAI Automation Engineer",
                                 "subject": "Surprise for {{31.`1`}}!",
                                 "attachments": []
                             },
@@ -741,7 +741,7 @@
                                                 "scoped": "true",
                                                 "connection": "google-restricted"
                                             },
-                                            "label": "My Google Restricted connection (book.beats01@gmail.com)"
+                                            "label": "My Google Restricted connection (test@example.com)"
                                         }
                                     }
                                 },
@@ -862,7 +862,7 @@
                                 },
                                 "sheetId": "Sheet1",
                                 "rowNumber": "{{31.`__ROW_NUMBER__`}}",
-                                "spreadsheetId": "/1xuz3842TWSK9o6roHMXLX_MXrSKLxK--qa2aP940WF0",
+                                "spreadsheetId": "/test_final_spreadsheet_id",
                                 "includesHeaders": true,
                                 "valueInputOption": "USER_ENTERED"
                             },
@@ -884,7 +884,7 @@
                                         },
                                         "spreadsheetId": {
                                             "path": [
-                                                "Final emails first sheet ai automation"
+                                                "Test Final Emails Sheet AI Automation"
                                             ]
                                         },
                                         "includesHeaders": {
@@ -1040,7 +1040,7 @@
                                                 "scoped": "true",
                                                 "connection": "google"
                                             },
-                                            "label": "My Google connection (book.beats01@gmail.com)"
+                                            "label": "My Google connection (test@example.com)"
                                         }
                                     }
                                 },
@@ -1315,3 +1315,4 @@
         "notes": []
     }
 }
+                                                            "
