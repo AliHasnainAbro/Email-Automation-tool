@@ -39,7 +39,7 @@
                                 "scoped": "true",
                                 "connection": "google"
                             },
-                            "label": "My Google connection (book.beats01@gmail.com)"
+                            "label": "My Google connection (email)"
                         },
                         "spreadsheetId": {
                             "path": [
